@@ -1,0 +1,294 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: url("src/images/cursor.png"), auto;
+  padding-top: 70px;
+  background-color: #1f1b1a;
+  color: #ffffff;
+  /* padding-left: 20px; */
+}
+
+footer {
+  display: flex;
+  background-color: rgb(93, 148, 94);
+  padding: 20px;
+  border-top: 2px solid white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1f1b1a;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  z-index: 1000;
+  padding: 15px;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+a {
+  cursor: url("src/images/cursor_selection.png"), auto;
+  color: white;
+  text-decoration: none;
+  /* font-weight: bolder; */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Classes */
+
+.section-name {
+  font-size: 80px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+.main-div {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-left-div {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  row-gap: 7px;
+}
+
+.section-left-div p {
+  text-align: justify;
+}
+
+.section-left-div h1 {
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+  color: #e4c9ba;
+}
+
+.socials-div {
+  width: fit-content;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+  display: flex;
+  gap: 25px;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-right-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.section-right-div img {
+  user-select: none;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.description {
+  text-align: justify;
+  width: 50%;
+}
+
+/* class for design */
+
+.lvl-container {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 300px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.lvl-info {
+  display: flex;
+  
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.lvl-info span {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.lvl-bar {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+  width: 100%;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.lvl-progress {
+  width: 20%; /* Progress % */
+  height: 100%;
+  background: linear-gradient(90deg, #e4c9ba, #1f1b1a);
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+
+/* ids */
+
+#home {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+}
+
+#skills {
+  background-color: #e4c9ba;
+  color: #3a1c1a;
+  padding: 35px;
+}
+
+#skills h1 {
+  color: #3a1c1a;
+  padding: 0;
+}
+
+#skills h2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#skills li {
+  font-size: 25px;
+}
+
+#education {
+  color: #e4c9ba;
+  padding: 35px;
+}
+
+#education li {
+  padding: 10px;
+}
+
+#education h1 {
+  color: #e4c9ba;
+}
+
+#projects {
+  background-color: #e4c9ba;
+  color: #3a1c1a;
+  padding: 35px;
+}
+
+#projects h1 {
+  color: #3a1c1a;
+}
+
+#about-me {
+  padding: 35px;
+}
+
+#footer {
+  background-color: grey;
+  height: 100px;
+}
+
+/* Special Class Effects*/
+
+.fade-img {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.typewriter {
+  /* padding: 20px 20px 0 0; */
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black; /* cursor */
+  animation: typing 3s steps(16, end) infinite, blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 16ch;
+  } /* Finished typing */
+  60% {
+    width: 16ch;
+  } /* Hold the full text for a moment */
+  100% {
+    width: 0;
+  } /* Erase text */
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+.wiggle {
+  display: inline-block;
+  animation: wiggle 0.5s infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
