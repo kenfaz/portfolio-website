@@ -1,6 +1,6 @@
 <!-- TODO: Music Player -->
+<!-- TODO: scroll animation -->
 <!-- TODO: Star system -->
-<!-- TODO: Change cursor -->
 <!-- TODO: Slide name -> show real name -->
 <!-- TODO: Click on skill -> show demo -->
 <!-- TODO: Burger on phone -->
@@ -27,35 +27,50 @@
     />
   </head>
   <body>
+    <div class="navigation-bar">
+      <div class="burger">☰</div>
+    </div>
     <nav>
-      <a href="#home">0xd4c</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#about-me">About Me</a>
+      <!-- <a class="cycle" href="#home">0xd4c</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#about-me">About Me</a> -->
+      <ul id="nav-links">
+        <li><a class="cycle" href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">About Me</a></li>
+      </ul>
     </nav>
     <section id="home">
       <div class="main-div">
         <div class="section-left-div">
+          <h2 class="wiggle-cycle">WEBSITE UNDER CONSTRUCTION!</h2>
           <div class="lvl-container">
             <div class="lvl-info">
               <span>lvl. 19</span>
             </div>
             <div class="lvl-bar">
               <div class="lvl-progress"></div>
+              <span class="lvl-up-text">Hire me to lvl up!</span>
             </div>
           </div>
           <p>I'm</p>
-          <h1>0XD4C</h1>
+          <h1 class="cycle">0XD4C</h1>
           <p class="typewriter">Software Developer</p>
           <div class="socials-div">
-            <a href="https://twitter.com/yourusername" target="_blank">
+            <a href="https://x.com/0xd4c" target="_blank">
               <i class="fab fa-twitter" style="color: #1da1f2"></i>
             </a>
             <a href="https://github.com/kenfaz" target="_blank">
               <i class="fab fa-github" style="color: #000000"></i>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <a
+              href="https://linkedin.com/in/khen-david-famadico-50ba49292"
+              target="_blank"
+            >
               <i class="fab fa-linkedin" style="color: #0a66c2"></i>
             </a>
             <a href="https://steamcommunity.com/id/0xd4c/" target="_blank">
@@ -64,7 +79,7 @@
             <a href="https://www.youtube.com/@ken-ken05" target="_blank">
               <i class="fab fa-youtube" style="color: #ff0000"></i>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <a href="https://www.facebook.com/kenken.redpanda" target="_blank">
               <i class="fab fa-facebook" style="color: #1877f2"></i>
             </a>
             <a href="https://www.goodreads.com/kenfaz" target="_blank">
@@ -72,8 +87,9 @@
             </a>
           </div>
           <p>
-            Creative programmer, gamer, and avid reader from the Philippines who
-            is into Wallpaper Engine, web modding, and game scripting.
+            <span class="cycle">Creative</span> programmer, gamer, and avid
+            reader from the Philippines who is into Wallpaper Engine, web
+            modding, and game scripting.
           </p>
         </div>
         <div class="section-right-div">
@@ -92,6 +108,7 @@
         <li><i class="devicon-java-plain colored"></i> Java</li>
         <li><i class="devicon-c-plain colored"></i> C</li>
         <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
+        <li><i class="devicon-bash-plain colored"></i> Bash</li>
       </ul>
 
       <h2>Web Development</h2>
@@ -172,26 +189,34 @@
     </section>
 
     <section id="projects">
+      <h2 class="wiggle-cycle">Under construction!</h2>
       <h1 class="section-name">PROJECTS</h1>
-      <h2>Banko Bato</h2>
-      <p>Banko Bato is a mock bank system design created using JavaFX.</p>
       <br />
+      <h2 class="wiggle-cycle">More to come!</h2>
       <h1 class="section-name">WEB PROJECTS</h1>
       <div class="showcase"></div>
     </section>
 
     <section id="about-me">
+      <h2 class="wiggle-cycle">Under construction!</h2>
       <h1 class="section-name">ABOUT ME</h1>
-      <p>
-        I was young when I touched my first computer. I still remember that it
-        was a fat monitor (CRT) running Windows XP. It was really old, and I was
-        6 or 7 at that time. Then we had a family computer, and that is where
-        everything started.
-      </p>
+      <div class="main-div">
+        <div class="about-me-left-div">
+          <!-- <p>
+            I was young when I touched my first computer. I still remember that
+            it was a fat monitor (CRT) running Windows XP. It was really old,
+            and I was 6 or 7 at that time. Then we had a family computer, and
+            that is where everything started.
+          </p> -->
+          <img src="src/images/experimental_lain.gif" />
+        </div>
+        <div class="about-me-right-div"></div>
+      </div>
     </section>
 
     <section id="footer">
       <footer>© 2025 0xd4c. All Rights Reserved.</footer>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
