@@ -1,0 +1,353 @@
+/* STEAM THEME */
+
+/*
+Steam Color Palette
+#171a21
+#66c0f4
+#1b2838
+#2a475e
+#c7d5e0
+*/
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("src/background_image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 15px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  width: 100%;
+  margin: 20px auto auto auto;
+  display: flex;
+  border-top: 2px solid white;
+}
+
+#heading-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  letter-spacing: 15px;
+  font-weight: bolder;
+}
+
+#profile-name {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100px;
+  font-size: 13px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  background: rgb(255, 255, 255);
+  color: black;
+  padding: 2px;
+}
+
+#steam-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.3s ease 0s;
+}
+
+#discord-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.3s ease 0s;
+}
+
+#github-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.3s ease 0s;
+}
+
+#steam-logo:hover {
+  transform: translateY(-10px);
+}
+
+#discord-logo:hover {
+  transform: translateY(-10px);
+}
+
+#github-logo:hover {
+  transform: translateY(-10px);
+}
+
+#yt-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease 0s;
+}
+
+#yt-logo:hover {
+  transform: translateY(-10px);
+}
+
+.logo-div {
+  display: inline;
+  height: 50%;
+  border-radius: 20px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.header img {
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  /* margin-left: 25px; */
+  /* margin: auto; */
+  /*
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  */
+}
+
+.logo-div img {
+  margin: 0px 10px;
+}
+.info-div {
+  width: 100%;
+  padding: 20px 0px 0px 20px;
+}
+
+div:not(
+    .box-1,
+    .main-navigator,
+    .nav-body,
+    .main-body,
+    .logo-div,
+    .logo-name,
+    .info-div
+  ) {
+  display: inline-flex;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 30%;
+  width: 100%;
+}
+
+.column-names {
+  background-color: rgba(0, 0, 0, 0.467);
+  font-style: bolder;
+  width: 30%;
+  height: 100%;
+  border-radius: 15px;
+  margin: auto;
+  transition: transform 0.3s ease 0s;
+  border: 2px solid white;
+}
+
+.column-names:hover {
+  transform: translateY(-10px);
+}
+
+.showcase {
+  width: 90%;
+  margin: auto;
+  display: inline-block;
+  border-radius: 15px;
+  border-bottom: 10px solid rgb(11, 11, 11);
+  transition: transform 0.3s ease 0s;
+}
+
+.showcase:hover {
+  transform: translateY(-10px);
+}
+
+.wallpaper-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 6rem;
+  font-size: 2rem;
+  text-align: center;
+  /* border: 2px solid white; */
+  /* border-radius: 15px;
+  background-color: white;
+*/
+}
+
+.profile {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+#p {
+  font-family: monospace;
+}
+
+.details {
+  text-align: left;
+  margin: 1px;
+  padding-bottom: 3px;
+}
+
+.inline {
+  display: block;
+}
+
+/* Miscellaneous*/
+.bold {
+  font-weight: 500px;
+}
+
+.padding {
+  padding: 0px 50px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-center {
+  text-align: justify;
+  margin: auto;
+}
+
+.socials {
+  margin: 20px;
+}
+
+.steam {
+  height: 30px;
+  width: 30px;
+  /* border: 2px solid white; */
+}
+
+.heading {
+  margin: 10px auto;
+  display: block;
+}
+
+.description {
+  display: block;
+  margin: 10px auto;
+}
+
+#profile {
+  border-radius: 50%;
+}
+
+#profile-text {
+  padding-left: 20px;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: white;
+
+  letter-spacing: 12px;
+  text-decoration: none;
+}
+
+.typewriter {
+  /* padding: 20px 20px 0 0; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  /* border-right: 3px solid rgb(255, 255, 255); Cursor */
+  /* border-radius: 25%; */
+  /* border-left: 5px solid white; */
+  line-height: 0.2em;
+  width: 100%;
+  animation: typing 5s steps(36, end) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 29ch;
+  } /* Finished typing */
+  60% {
+    width: 29ch;
+  } /* Hold the full text for a moment */
+  100% {
+    width: 0;
+  } /* Erase text */
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: "786px") {
+  .gallery {
+    flex-direction: column;
+  }
+}
