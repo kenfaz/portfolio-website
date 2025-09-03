@@ -95,11 +95,24 @@ footer {
 
 }
 
-.wallpapers-div video {
+.wallpapers-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wallpapers-container video {
   width: 320px;
   height: auto;
   border-radius: 5px;
   border: 2px solid white;
+}
+
+.wallpapers-container p {
+  margin-top: 15px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: white;
+
 }
 
 /* ids */
