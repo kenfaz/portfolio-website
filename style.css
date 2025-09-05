@@ -163,6 +163,17 @@ a {
   text-align: right;
 }
 
+.workshops {
+  display: flex;
+  gap: 50px;
+}
+
+.showcase-container {
+  width: 500px;
+  height: 250px;
+  border: 2px solid black;
+}
+
 .about-me-left-div img {
   width: 100%;
   height: auto;
