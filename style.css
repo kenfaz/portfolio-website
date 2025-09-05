@@ -171,7 +171,34 @@ a {
 .showcase-container {
   width: 500px;
   height: 250px;
-  border: 2px solid black;
+  border-radius: 25px;
+  /* border: 4px solid black; */
+}
+
+.upper-showcase-container {
+  height: 70%;
+  width: inherit;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+}
+
+.upper-showcase-container img {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.lower-showcase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* background-color: #00bcd4; */
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+  height: 30%;
 }
 
 .about-me-left-div img {
@@ -383,6 +410,18 @@ a {
   animation: cycleColors 3s linear infinite, wiggle 0.5s infinite;
 }
 
+.float-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.float-box:hover {
+  transform: translateY(-10px); /* moves div up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* adds floating shadow */
+}
+
+
+
 /* Keyframes */
 
 @keyframes cycleColors {
@@ -458,3 +497,4 @@ a {
     border-color: rgb(255, 255, 255);
   }
 }
+

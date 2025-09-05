@@ -7,14 +7,13 @@ const educationLink = document.querySelector("#education-link");
 const projectsLink = document.querySelector("#projects-link");
 const aboutMeLink = document.querySelector("#about-me-link");
 
+// Burger menu
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
   navDiv.classList.toggle("show-borders");
 });
 
-// Check which section the user is
-
-
+// Highlight the section the user is
 window.addEventListener("scroll", () => {
   let sections = document.querySelectorAll("section");
   let current;
@@ -69,3 +68,8 @@ window.addEventListener("scroll", () => {
       break;
   }
 });
+
+// Wallpaper showcase
+document.getElementById("wallpaper-engine").addEventListener("click", function() {
+  window.location.href = "src/extras/wallpaper_showcases/index.html";
+})

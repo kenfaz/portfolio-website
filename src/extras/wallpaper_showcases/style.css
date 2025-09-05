@@ -105,13 +105,14 @@ footer {
   width: 320px;
   height: auto;
   border-radius: 5px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .wallpapers-container p {
   margin-top: 15px;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: white;
+  padding-bottom: 15px;
 
 }
 
@@ -141,6 +142,17 @@ footer {
   height: 100%;
 }
 
+
+/* Animations */
+.float-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.float-box:hover {
+  transform: translateY(-10px); /* moves div up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* adds floating shadow */
+}
 
 
 
