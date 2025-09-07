@@ -1,10 +1,11 @@
 <!-- TODO: Music Player -->
-<!-- TODO: scroll animation -->
 <!-- TODO: Star system -->
 <!-- TODO: Slide name -> show real name -->
 <!-- TODO: Click on skill -> show demo -->
-<!-- TODO: Burger on phone -->
+<!-- TODO: Mini game -->
+<!-- TODO: Replace the nav bar -->
 <!-- TODO: Footer -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,17 +30,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navigation-bar">
-        <a id="home-link" class="cycle" href="#home">0xd4c</a>
-        <a id="skills-link" href="#skills">Skills</a>
-        <a id="education-link" href="#education">Education</a>
-        <a id="projects-link" href="#projects">Projects</a>
-        <a id="about-me-link" href="#about-me">About Me</a>
-      </div>    </div>
+      <a id="home-link" class="cycle" href="#home">0xd4c</a>
+      <a id="skills-link" href="#skills">Skills</a>
+      <a id="education-link" href="#education">Education</a>
+      <a id="projects-link" href="#projects">Projects</a>
+      <a id="about-me-link" href="#about-me">About Me</a>
+    </div>
     <div class="burger">☰</div>
-    <nav>
+    <nav id="burger-menu">
       <ul id="nav-links">
         <li><a id="home-link" class="cycle" href="#home">Home</a></li>
         <li><a id="skills-link" href="#skills">Skills</a></li>
@@ -52,7 +59,7 @@
     <section id="home">
       <div class="main-div">
         <div class="section-left-div">
-          <h2 class="wiggle-cycle">WEBSITE UNDER CONSTRUCTION!</h2>
+          <!-- <h2 class="wiggle-cycle">WEBSITE UNDER CONSTRUCTION!</h2> -->
           <div class="lvl-container">
             <div class="lvl-info">
               <span>lvl. 19</span>
@@ -65,47 +72,72 @@
           <p>I'm</p>
           <h1 class="cycle">0XD4C</h1>
           <p class="typewriter">Software Developer</p>
+          <p class="intro-about-me">
+            <span class="cycle">Creative</span> programmer, gamer, and avid
+            reader from the Philippines who is into Wallpaper Engine, web
+            modding, and game scripting.
+          </p>
+
           <div class="socials-div">
             <a href="https://x.com/0xd4c" target="_blank">
-              <i class="fab fa-twitter" style="color: #1da1f2"></i>
+              <i class="fab fa-twitter" style="color: #e4c9ba"></i>
             </a>
             <a href="https://github.com/kenfaz" target="_blank">
-              <i class="fab fa-github" style="color: #000000"></i>
+              <i class="fab fa-github" style="color: #e4c9ba"></i>
             </a>
             <a
               href="https://linkedin.com/in/khen-david-famadico-50ba49292"
               target="_blank"
             >
-              <i class="fab fa-linkedin" style="color: #0a66c2"></i>
+              <i class="fab fa-linkedin" style="color: #e4c9ba"></i>
             </a>
             <a href="https://steamcommunity.com/id/0xd4c/" target="_blank">
-              <i class="fab fa-steam" style="color: rgb(2, 2, 62)"></i>
+              <i class="fab fa-steam" style="color: #e4c9ba"></i>
             </a>
             <a href="https://www.youtube.com/@ken-ken05" target="_blank">
-              <i class="fab fa-youtube" style="color: #ff0000"></i>
+              <i class="fab fa-youtube" style="color: #e4c9ba"></i>
             </a>
             <a href="https://www.facebook.com/kenken.redpanda" target="_blank">
-              <i class="fab fa-facebook" style="color: #1877f2"></i>
+              <i class="fab fa-facebook" style="color: #e4c9ba"></i>
             </a>
             <a href="https://www.goodreads.com/kenfaz" target="_blank">
-              <i class="fab fa-goodreads" style="color: #553b08"></i>
+              <i class="fab fa-goodreads" style="color: #e4c9ba"></i>
             </a>
             <a href="https://monkeytype.com/profile/0xd4c" target="_blank">
-              <i class="fa-solid fa-keyboard" style="color: #553b08"></i>
+              <i class="fa-solid fa-keyboard" style="color: #e4c9ba"></i>
             </a>
           </div>
-          <p>
-            <span class="cycle">Creative</span> programmer, gamer, and avid
-            reader from the Philippines who is into Wallpaper Engine, web
-            modding, and game scripting.
-          </p>
         </div>
         <div class="section-right-div">
-          <img class="fade-img" src="src/images/profile5.png" />
+          <!-- <img class="fade-img" src="src/images/profile5.png" /> -->
+          <div class="section-right-img-container">
+            <img class="border-cycle" src="src/images/profile3.jpg" />
+          </div>
+        </div>
+      </div>
+      <canva></canva>
+    </section>
+    <section id="home-experience">
+      <div class="experience-info-container">
+        <div>
+          <h1>19</h1>
+          <p>Years <br> Old</p>
+        </div>
+        <div>
+          <h1>0</h1>
+          <p>Years of<br> Experience</p>
+        </div>
+        <div>
+          <h1>0</h1>
+          <p>Projects <br> Accomplished</p>
+        </div>
+        <div>
+          <h1>0</h1>
+          <p>Projects <br> Deployed</p>
         </div>
       </div>
     </section>
-
+    <!-- SKILLS SECTION -->
     <section id="skills">
       <h1 class="section-name wiggle">SKILLS</h1>
       <h2>Programming Languages</h2>
