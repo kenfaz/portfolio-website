@@ -474,7 +474,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid black; /* cursor */
-  animation: typing 3s steps(18, end) infinite, blink 0.8s step-end infinite;
+  animation: typing 3s steps(21, end) infinite, blink 0.8s step-end infinite;
 }
 
 .wiggle {
@@ -557,10 +557,10 @@ a {
     width: 0;
   }
   40% {
-    width: 18ch;
+    width: 21ch;
   } /* Finished typing */
   60% {
-    width: 18ch;
+    width: 21ch;
   } /* Hold the full text for a moment */
   100% {
     width: 0;
@@ -655,6 +655,7 @@ a {
 
   .experience-info-container div {
     line-height: 0.6em;
+    border: none;
   }
 
   .experience-info-container div h1 {
