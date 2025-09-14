@@ -354,6 +354,52 @@ a {
   opacity: 1;
 }
 
+.skills-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.skills-brick-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.skills-brick {
+  font-family: "JetBrains Mono", "Poppins", Arial, Helvetica, sans-serif;
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+  height: 45px;
+  gap: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.skill-excellent {
+  background-color: #00d45583;
+}
+
+.skill-decent {
+  background-color: #ebc042bf;
+}
+
+.skill-competent {
+  background-color: #a581da83;
+}
+
+.skill-learning {
+  background-color: #da8181c7;
+}
+
 /* ids */
 #nav-links {
   list-style: none;
@@ -396,6 +442,7 @@ a {
 }
 
 #skills {
+  flex-direction: column;
   background-color: #e4c9ba;
   color: #3a1c1a;
   padding: 35px;
