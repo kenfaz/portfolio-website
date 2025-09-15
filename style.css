@@ -158,8 +158,16 @@ a {
   display: flex;
   gap: 30px;
   border-radius: 25px;
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 10px;
+}
+
+.socials-div i {
+  transition: transform 0.3s;
+}
+
+.socials-div i:hover {
+  transform: scale(1.25);
 }
 
 .section-right-div {
@@ -171,11 +179,11 @@ a {
 .section-right-div img {
   user-select: none;
   max-width: 500px;
-  border-radius: 10px;
 }
 
 .section-right-img-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -183,7 +191,7 @@ a {
   height: 100%;
 }
 
-.section-right-img-container img {
+.section-right-img-container img:first-child {
   border-radius: 50%;
   width: 75%;
   border: 6px solid white;
@@ -354,10 +362,14 @@ a {
   opacity: 1;
 }
 
+
 .skills-levels {
+  margin-top: 25px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  font-weight: bolder;
 }
 
 .skills-brick-container {
@@ -365,8 +377,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .skills-brick {
@@ -382,6 +394,12 @@ a {
   gap: 10px;
   border-radius: 5px;
   font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.221);
+  transition: transform 0.3s;
+}
+
+.skills-brick:hover {
+  transform: scale(1.05);
 }
 
 .skill-excellent {
@@ -398,6 +416,54 @@ a {
 
 .skill-learning {
   background-color: #da8181c7;
+}
+
+.education-bricks-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.education-bricks {
+  font-family: "JetBrains Mono", "Poppins", Arial, Helvetica, sans-serif;
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  width: fit-content;
+  height: 45px;
+  gap: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.248);
+  background-color: #e4c9bad5;
+  color: #1f1b1a;
+  margin-bottom: 5px;
+  transition: transform 0.3s;
+}
+
+.education-bricks:hover {
+  transform: scale(1.05);
+}
+
+.education-blue {
+  background-color: #3c4574;
+}
+
+.education-yellow {
+  background-color: #ffbd5a
+}
+
+.education-orange {
+  background-color: #b56e3f;
+}
+
+.education-white {
+  background-color: #ffffff;
 }
 
 /* ids */
@@ -455,8 +521,10 @@ a {
 }
 
 #skills h2 {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+
 }
 
 #skills li {
@@ -474,6 +542,18 @@ a {
 
 #education h1 {
   color: #e4c9ba;
+}
+
+#education h2 {
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  /* color: #3fb76b; */
+}
+
+#education h4 {
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 #projects {
