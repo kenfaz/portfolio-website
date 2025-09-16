@@ -17,7 +17,7 @@
     />
     <meta author="0xd4c" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="src/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="src/icons/scythe.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -39,17 +39,20 @@
   </head>
   <body>
     <div class="navigation-bar">
-      <a id="home-link" class="cycle" href="#home">0xd4c</a>
-      <a id="skills-link" href="#skills">Skills</a>
-      <a id="education-link" href="#education">Education</a>
-      <a id="projects-link" href="#projects">Projects</a>
-      <a id="about-me-link" href="#about-me">About Me</a>
+      <a id="home-link" class="brick" href="#home">0xd4c</a>
+
+      <div class="brick">
+        <a id="skills-link" href="#skills">Skills</a>
+        <a id="education-link" href="#education">Education</a>
+        <a id="projects-link" href="#projects">Projects</a>
+        <a id="about-me-link" href="#about-me">About Me</a>
+      </div>
     </div>
     <div class="burger">☰</div>
     <nav id="burger-menu">
       <ul id="nav-links">
-        <li><a id="home-link" class="cycle" href="#home">Home</a></li>
-        <li><a id="skills-link" href="#skills">Skills</a></li>
+        <li><a id="home-link" href="#home">Home</a></li>
+        <li><a id="skills-link" class="brick" href="#skills">Skills</a></li>
         <li><a id="education-link" href="#education">Education</a></li>
         <li><a id="projects-link" href="#projects">Projects</a></li>
         <li><a id="about-me-link" href="#about-me">About Me</a></li>
@@ -213,6 +216,9 @@
         <div class="skills-brick skill-learning">
           <i class="devicon-tailwindcss-original colored"></i> Tailwindcss
         </div>
+        <div class="skills-brick skill-learning">
+          <i class="devicon-vitejs-plain colored"></i> Vite
+        </div>
       </div>
       <h2>Design</h2>
       <div class="skills-brick-container">
@@ -276,7 +282,9 @@
         <div class="education-bricks education-white">OS Installation</div>
         <div class="education-bricks education-white">OS Configuration</div>
         <div class="education-bricks education-white">Adobe Animate</div>
-        <div class="education-bricks education-white">Adobe Photoshop</div>
+        <div class="education-bricks education-white">
+          <i class="devicon-photoshop-plain colored"></i>Adobe Photoshop
+        </div>
       </div>
       <!-- <h2>College</h2> -->
       <h2>City College of Calamba (2024-2028)</h2>
@@ -286,20 +294,23 @@
           Software Development using JavaFX
         </div>
         <div class="education-bricks education-white">
-          Front-end development:
+          Front-end:
           <i class="devicon-html5-plain colored"></i>
           <i class="devicon-css3-plain colored"></i>
           <i class="devicon-javascript-plain colored"></i>
         </div>
         <div class="education-bricks education-white">
-          Back-end development:
+          Back-end:
           <i class="devicon-php-plain colored"></i>
           <i class="devicon-mysql-original colored"></i>
         </div>
+        <div class="education-bricks">Data Structures and Algorithms</div>
         <div class="education-bricks education-blue">
-          <i class="fa-solid fa-network-wired"></i>Networking
+          <i class="fa-solid fa-network-wired" style="color: #ffffff"></i
+          >Networking
         </div>
       </div>
+
       <h2>Certificates</h2>
       <div class="education-bricks-container">
         <div class="education-bricks education-yellow">
