@@ -48,42 +48,42 @@ window.addEventListener("scroll", () => {
   });
   switch (current) {
     case "home":
-      homeLink.classList.add("cycle");
-      skillsLink.classList.remove("cycle");
-      educationLink.classList.remove("cycle");
-      projectsLink.classList.remove("cycle");
-      aboutMeLink.classList.remove("cycle");
+      homeLink.classList.add("cycle-links");
+      skillsLink.classList.remove("cycle-links");
+      educationLink.classList.remove("cycle-links");
+      projectsLink.classList.remove("cycle-links");
+      aboutMeLink.classList.remove("cycle-links");
       break;
     case "skills":
-      skillsLink.classList.add("cycle");
-      homeLink.classList.remove("cycle");
-      educationLink.classList.remove("cycle");
-      projectsLink.classList.remove("cycle");
-      aboutMeLink.classList.remove("cycle");
+      skillsLink.classList.add("cycle-links");
+      homeLink.classList.remove("cycle-links");
+      educationLink.classList.remove("cycle-links");
+      projectsLink.classList.remove("cycle-links");
+      aboutMeLink.classList.remove("cycle-links");
       break;
 
     case "education":
-      educationLink.classList.add("cycle");
-      homeLink.classList.remove("cycle");
-      skillsLink.classList.remove("cycle");
-      projectsLink.classList.remove("cycle");
-      aboutMeLink.classList.remove("cycle");
+      educationLink.classList.add("cycle-links");
+      homeLink.classList.remove("cycle-links");
+      skillsLink.classList.remove("cycle-links");
+      projectsLink.classList.remove("cycle-links");
+      aboutMeLink.classList.remove("cycle-links");
       break;
 
     case "projects":
-      projectsLink.classList.add("cycle");
-      homeLink.classList.remove("cycle");
-      skillsLink.classList.remove("cycle");
-      educationLink.classList.remove("cycle");
-      aboutMeLink.classList.remove("cycle");
+      projectsLink.classList.add("cycle-links");
+      homeLink.classList.remove("cycle-links");
+      skillsLink.classList.remove("cycle-links");
+      educationLink.classList.remove("cycle-links");
+      aboutMeLink.classList.remove("cycle-links");
       break;
 
     case "about-me":
-      aboutMeLink.classList.add("cycle");
-      homeLink.classList.remove("cycle");
-      skillsLink.classList.remove("cycle");
-      educationLink.classList.remove("cycle");
-      projectsLink.classList.remove("cycle");
+      aboutMeLink.classList.add("cycle-links");
+      homeLink.classList.remove("cycle-links");
+      skillsLink.classList.remove("cycle-links");
+      educationLink.classList.remove("cycle-links");
+      projectsLink.classList.remove("cycle-links");
       break;
 
     default:

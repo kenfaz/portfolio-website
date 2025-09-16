@@ -46,9 +46,9 @@ body {
 
 footer {
   display: flex;
-  background-color: rgb(93, 148, 94);
+  color: #1f1b1a;
+  background-color: #eaff00;
   padding: 20px;
-  border-top: 2px solid white;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -213,7 +213,7 @@ a {
   text-align: center;
   align-items: center;
   gap: 10px;
-  border-left: 3px solid #9b3fb5;
+  border-left: 3px solid #eaff00;
   padding: 10px;
   line-height: 1.3rem;
 }
@@ -273,7 +273,7 @@ a {
   text-align: center;
   align-items: center;
   /* background-color: #00bcd4; */
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 0 0 25px 25px;
   width: inherit;
   height: 30%;
@@ -326,15 +326,15 @@ a {
   /* overflow: hidden; */
   height: 30px;
   width: 100%;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
-  border: 3px solid black;
+  box-shadow: inset 0 0 5px rgba(146, 146, 146, 0.136);
+  border: 3px solid rgba(0, 0, 0, 0.192);
   animation: cycleBorderColors 3s linear infinite;
 }
 
 .lvl-progress {
   width: 20%; /* Progress % */
   height: 100%;
-  background: linear-gradient(90deg, #4caf50, #e4c9ba);
+  background: linear-gradient(90deg, #687f01, #d2f631);
   border-radius: 20px;
   transition: width 1s ease-in-out;
   margin-bottom: 10px;
@@ -361,7 +361,6 @@ a {
   visibility: visible;
   opacity: 1;
 }
-
 
 .skills-levels {
   margin-top: 25px;
@@ -455,7 +454,7 @@ a {
 }
 
 .education-yellow {
-  background-color: #ffbd5a
+  background-color: #ffbd5a;
 }
 
 .education-orange {
@@ -524,7 +523,6 @@ a {
   font-size: 2rem;
   margin-top: 25px;
   margin-bottom: 15px;
-
 }
 
 #skills li {
@@ -541,7 +539,7 @@ a {
 }
 
 #education h1 {
-  color: #e4c9ba;
+  color: #eaff00;
 }
 
 #education h2 {
@@ -572,6 +570,10 @@ a {
 
 #about-me {
   padding: 35px;
+}
+
+#about-me h1 {
+  color: #eaff00;
 }
 
 #footer {
@@ -640,6 +642,10 @@ a {
   animation: cycleColors 3s linear infinite, wiggle 0.5s infinite;
 }
 
+.cycle-links {
+  animation: cycleLinksColors 3s linear infinite;
+}
+
 .float-box {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -654,38 +660,56 @@ a {
 
 @keyframes cycleColors {
   0% {
-    color: #e91e63;
-  } /* pink */
+    color: #d2f631;
+  }
   25% {
-    color: #3f51b5;
-  } /* indigo */
+    color: #e4c9ba;
+  }
   50% {
-    color: #00bcd4;
-  } /* cyan */
+    color: #d2f631;
+  }
   75% {
-    color: #4caf50;
-  } /* green */
+    color: #e4c9ba;
+  }
   100% {
-    color: #e91e63;
-  } /* back to start */
+    color: #d2f631;
+  }
 }
 
 @keyframes cycleBorderColors {
   0% {
-    border-color: #e91e63;
-  } /* pink */
+    border-color: #d2f631;
+  }
   25% {
-    border-color: #9b3fb5;
-  } /* indigo */
+    border-color: #e4c9ba;
+  }
   50% {
     border-color: #1f1b1a;
-  } /* cyan */
+  }
   75% {
-    border-color: #9e4caf;
-  } /* green */
+    border-color: #e4c9ba;
+  }
   100% {
-    border-color: #e91e63;
-  } /* back to start */
+    border-color: #d2f631;
+  }
+}
+
+@keyframes cycleLinksColors {
+  0% {
+    color: #1f1b1a91;
+  }
+  25% {
+    color: #788f15;
+  }
+  50% {
+    color: #1f1b1a;
+  }
+  75% {
+    color: #788f15;
+  }
+  100% {
+    color: #1f1b1a91;
+  }
 }
 
 @keyframes wiggle {
